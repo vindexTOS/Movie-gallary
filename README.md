@@ -1,2 +1,2 @@
-# Movie-gallary
+# Movie-gallery
  React project
