@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: none;
+}
+
+.main-div {
+  overflow: hidden;
+  background-color: rgb(228, 222, 222);
+  padding-bottom: 20%;
+  background-size: cover;
+  height: 100%;
+}
+.dark-mode {
+  background-color: rgb(20, 20, 20);
+  padding-bottom: 20%;
+
+  overflow: hidden;
+}
+.nav-wrapper {
+  height: 100vh;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+
+  vertical-align: top;
+  width: 100%;
+  height: 3rem;
+  background-color: rgb(206, 201, 201);
+  z-index: 100;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.nav-bar-dark {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 3rem;
+  background-color: rgb(7, 5, 5);
+  z-index: 100;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.movie {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+  gap: 2rem;
+  margin-top: 100px;
+  color: rgb(0, 0, 0);
+  height: 100%;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 2rem;
+  background-color: rgb(247, 247, 247);
+  gap: 2rem;
+  width: 100%;
+}
+.list-dark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 2rem;
+  background-color: rgb(56, 55, 55);
+  color: white;
+  gap: 2rem;
+  width: 100%;
+}
+img {
+  width: 90%;
+  height: 400px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 2px solid rgb(0, 105, 105);
+}
+.btn-container {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  width: 100%;
+}
+.btn {
+  align-self: center;
+  justify-self: center;
+  width: 90%;
+  height: 3rem;
+  margin-bottom: 15px;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.btn:first-of-type {
+  color: red;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.btn:first-of-type:hover {
+  background-color: rgb(247, 78, 78);
+  color: white;
+}
+.btn:nth-child(2) {
+  background-color: greenyellow;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+}
+.btn:hover {
+  background-color: rgb(151, 247, 247);
+}
+
+.search-bar {
+  height: 2rem;
+  width: 14rem;
+
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.bar-icon {
+  border: none;
+  position: absolute;
+  margin-left: 95%;
+
+  cursor: pointer;
+  background: none;
+  font-size: 1.8rem;
+}
+.bar-icon:hover {
+  color: rgb(8, 177, 177);
+}
+.bar-icon-dark {
+  border: none;
+  position: absolute;
+  margin-left: 95%;
+
+  cursor: pointer;
+  background: none;
+  font-size: 1.8rem;
+  color: white;
+}
+.bar-icon-dark:hover {
+  color: rgb(8, 177, 177);
+}
+
+.dark-icon {
+  font-size: 1.8rem;
+  height: 40%;
+}
+.dark-icon-light {
+  color: white;
+  font-size: 2rem;
+  height: 40%;
+}
+.moon-icon {
+  position: absolute;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: 90%;
+}
+.moon-icon:hover {
+  color: rgb(8, 177, 177);
+}
+.dark-icon-light:hover {
+  color: rgb(8, 177, 177);
+}
+
+.dialog {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.dialog h3 {
+  text-align: center;
+  background-color: rgb(255, 88, 88);
+  border-radius: 15px;
+}
+.btn-container-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+@media screen and (max-width: 600px) {
+  .dialog {
+    margin-left: 25px;
+  }
+  .popupt-btn {
+    width: 50%;
+    height: 2rem;
+  }
+}
+.popup-btn-cancel {
+  width: 9rem;
+  height: 3rem;
+  border-radius: 20px;
+  background-color: rgb(253, 105, 51);
+  border: none;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 2px;
+  box-shadow: 2px 2px 2px solid black;
+  cursor: pointer;
+  margin-right: 16px;
+}
+.popup-btn-cancel:hover {
+  background-color: red;
+}
+
+.popup-btn-yes {
+  width: 8rem;
+  height: 3rem;
+  border-radius: 20px;
+  background-color: greenyellow;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  box-shadow: 2px 2px 2px solid black;
+  cursor: pointer;
+}
+.popup-btn-yes:hover {
+  background-color: rgb(0, 245, 12);
+  color: white;
+}
